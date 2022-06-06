@@ -1,0 +1,107 @@
+.keyboard {
+    width: 100vw;
+    height: 100vh;
+    .keyboard-background {
+        max-width: 720px;
+        width: 75%;
+        height: auto;
+        margin-bottom: -2rem;
+    }
+    .keyboard-background-vector {
+        width: 83%;
+        height: auto;
+    }
+    .keyboard-form {
+        max-width: 760px;
+        width: 95%;
+        max-height: 1000px;
+        height: 90%;
+        .item{
+            height: 120px;
+            border-radius: 16px;
+            @media (max-height: 900px) {
+                height: 100px;
+            }
+            @media (max-height: 700px) {
+                height: 60px;
+            }
+        }
+    //     .icon {
+    //         width: 24px;
+    //         height: 24px;
+    //     }.is-error{
+    //         .el-input__wrapper {
+    //             border-color: #F65747 !important;
+    //         }
+    //     }
+    //     .el-input {
+    //         border-radius: 12px;
+    //         border-radius: 12px;
+    //         width: 100%;
+    //         .el-input__wrapper {
+    //             border: solid 1px #5669FF;
+    //             border-radius: 12px;
+    //             box-shadow: none;
+    //             background: transparent;
+    //             // &.is-focus{
+    //             //     border-color: #409eff;
+    //             // }
+    //             input {
+    //                 width: 100%;
+    //                 height: 58px;
+    //                 font-size: 18px;
+    //                 padding: 0 2.5rem;
+    //             }
+    
+    //             .el-icon {
+    //                 width: 60px;
+    //                 height: 100%;
+    //                 font-size: 24px;
+    //                 svg {
+    //                     width: 20px;
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     .el-form-item__error {
+    //         color: #F65747;
+    //         font-size: 20px;
+    //         font-style: italic;
+    //         margin-top: 0.4rem;
+    //     }
+        button {
+            width: 280px;
+            height: 64px;
+            border-radius: 12px;
+            font-size: 22px;
+            border-width: 1.5px;
+            background-color: #fff;
+            &.is-disabled{
+                background-color: #EEF1F5 !important;
+                color: #d1d1d1 !important;
+            }
+            &:hover, &:focus, &.submit-btn{
+                background-color: #5669FF;
+                color: #fff;
+
+            }
+        }
+
+        @media (min-height: 950px) {
+            justify-content: space-around !important;
+         }
+         @media (max-height: 780px) {
+             .form{
+                 margin-top: 0 !important;
+             }
+             .keyboard-list{
+                 margin-top: 0 !important;
+             }
+         }
+         @media (max-height: 500px) {
+            .item {
+                margin-top: 0.5rem !important;
+            }
+        }
+    }
+}

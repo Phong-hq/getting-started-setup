@@ -1,0 +1,105 @@
+.category {
+    width: 100vw;
+    height: 100vh;
+    .category-background {
+        min-width: 458px;
+        width: 48%;
+        height: auto;
+    }
+    .category-background-vector {
+        width: 78%;
+        height: auto;
+    }
+    .category-form {
+        max-width: 760px;
+        width: 95%;
+        max-height: 1000px;
+        height: 90%;
+        .categories-list{
+            height: 62vh;
+            max-height: 700px;
+            overflow-y: scroll;
+            gap: 0px;
+            &::-webkit-scrollbar-thumb {
+                background-color: #E0E0E0;
+                border-radius: 12px;
+            }
+            &::-webkit-scrollbar {
+                z-index: 10;
+                width: 10px;
+              }
+            .el-checkbox-button__inner, .el-checkbox-button{
+                padding: 0;
+                border: none;
+                border-radius: 12px;
+                transition: .2s;
+                width: 100%;
+            }
+            .el-checkbox-button.is-checked .el-checkbox-button__inner{
+                background-color: #5669FF;
+            }
+            .item{
+                height: 64px;
+                border-radius: 12px;
+                border: solid 1.5px #dfe3ff;
+                display: grid;
+                grid-template-columns: 65px auto 65px;
+                div{
+                    .color{
+                        background-color: #546516;
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+            @media (max-height: 950px) {
+                height: 50vh !important;
+            }
+            @media (max-height: 750px) {
+                height: 40vh !important;
+            }
+        }
+        button {
+            width: 280px;
+            height: 64px;
+            border-radius: 12px;
+            font-size: 22px;
+            border-width: 1.5px;
+            background-color: #fff;
+            &.is-disabled{
+                background-color: #EEF1F5 !important;
+                color: #d1d1d1 !important;
+            }
+            &:hover, &:focus, &.submit-btn{
+                background-color: #5669FF;
+                color: #fff;
+
+            }
+        }
+
+    }
+    @media (min-height: 1400px) {
+        justify-content: space-around !important;
+        max-height: 1350px !important;
+    }
+    @media (max-height: 600px) {
+        .form{
+            margin-top: 0 !important;
+        }
+        .back-btn{
+            bottom: 3rem;
+            p{
+                margin: 0 !important;
+                font-size: 18px !important;
+            }
+        }
+    }
+    @media (max-height: 500px) {
+        .el-checkbox-button{
+            margin-bottom: 0.5rem;
+        }
+        .el-checkbox-group{
+            margin-top: 0.5rem;
+        }
+    }
+}

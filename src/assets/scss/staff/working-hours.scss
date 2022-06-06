@@ -1,0 +1,165 @@
+.working-hours{
+    .absolute{
+        top: -1.75rem;
+        button{
+            height: 52px !important;
+            width: 125px !important;
+            border-radius: 8px !important;
+            padding: 10px;
+            background-color: #5669FF;
+            color: #fff;
+            @media (max-width: 1300px) {
+                height: 42px;
+                width: 100px;
+            }
+            @media (max-width: 1100px) {
+                height: 42px;
+                width: 85px;
+            }
+        }
+    }
+    .header{
+        grid-template-columns:   45px   150px 300px  auto 100px;
+        @media (max-width: 1300px) {
+            grid-template-columns:   45px   80px 200px  auto 100px;
+        }
+        @media (max-width: 1100px) {
+            grid-template-columns:   45px   100px 100px  auto 100px;
+        }
+    }
+    .body{
+        .item{
+            background: #FFFFFF;
+            border: 1px solid #DFE3FF;
+            box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.03);
+            height: 50px;
+            border-radius: 8px;
+            .grid{
+                grid-template-columns:   45px   150px 300px  auto 100px;
+                @media (max-width: 1300px) {
+                    grid-template-columns:   45px   80px 200px  auto 100px;
+                }
+                 @media (max-width: 1100px) {
+                    grid-template-columns:   45px   100px 100px  auto 100px;
+                }
+                
+            }
+        }
+    }    
+    .el-overlay-dialog{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .edit-work-hours{
+        min-width: 956px;
+        width: 50%;
+        margin: 0;
+      
+        @media (max-width: 1050px) {
+            width: 90%;
+            min-width: unset;
+        }
+        .dialog-body{
+            height: 50vh;
+            max-height: 550px;
+            overflow: auto;
+        }
+        .el-dialog__header{
+            border-bottom: 1px solid #D1D1D1;
+            height: 80px;
+            width: 100%;
+            margin: 0;
+            padding-top: 0;
+            padding-bottom: 0;
+            display: flex;
+            align-items: center;
+            span{
+                font-size: 24px;
+                font-weight: 600;
+                line-height: 36px;
+                text-align: left;
+            }
+        }
+        .el-dialog__headerbtn{
+            height: 70px;
+            width: 100px;
+        }
+        .header{
+            grid-template-columns:   auto   268px 212px  158px;
+            @media (max-width: 850px) {
+                grid-template-columns:   auto   218px 162px  108px;
+            }
+            @media (max-width: 680px) {
+                grid-template-columns:   auto   178px 122px  88px;
+            }
+        }
+        .item{
+            grid-template-columns:   auto   268px 212px  158px;
+            @media (max-width: 850px) {
+                grid-template-columns:   auto   218px 162px  108px;
+            }
+            @media (max-width: 680px) {
+                grid-template-columns:   auto   178px 122px  88px;
+            }
+            .time{
+                width: 148px;
+                height: 42px;
+                border: 1.5px solid #B4BCFF;
+                border-radius: 8px;
+                @media (max-width: 700px) {
+                    width: 108px;
+                }
+                .el-input__wrapper{
+                    border: none;
+                    box-shadow: none;
+                }
+                .el-input__prefix{
+                    display: none;
+                }
+                .el-input__inner{
+                    text-align: center;
+                    font-size: 16px;
+                }
+            }
+        }
+        .dialog-footer{
+            button{
+                height: 52px !important;
+                border-radius: 12px;
+                color: #5669FF;
+                margin-bottom: 1rem;
+                background-color: #fff;
+                &:hover{
+                    color: #fff;
+                    background: #5669FF;
+                }
+            }
+            .el-button--primary{
+                color: #fff;
+                background: #5669FF;
+                width: 160px;
+            }
+        }
+    }
+}
+.el-time-spinner__item{
+    font-size: 16px;
+    height: 50px;
+    line-height: 50px;
+}
+.el-time-panel__content::after,  .el-time-panel__content::before{
+    content: '';
+    height: 50px;
+    padding-top: 10px;
+    margin-top: -16px;
+}
+.el-time-panel__footer {
+    height: 50px;
+    line-height: 50px;
+    button{
+        // padding: 0px 21px;
+        font-size: 20px;
+        margin-right: 0.55rem;
+    }
+}

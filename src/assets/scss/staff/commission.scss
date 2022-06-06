@@ -1,0 +1,68 @@
+
+    .commission{
+        width: 100%;
+        .el-collapse{
+            border: none;
+            .el-collapse-item__header{
+                background: #F4F4F4;
+                min-height: 42px;
+                height: auto;
+                border: none;
+                border-radius: 12px;
+                padding-left: 2rem;
+                margin-bottom: 2rem;
+            }
+            .el-icon{
+                display: none;
+                font-size: 18px;
+                color: #5669FF;
+
+            }
+        }
+        .commission-item{
+            width: 100%;
+            background: #F4F4F4;
+            min-height: 42px;
+            height: auto;
+            border: none;
+            border-radius: 12px;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+        }
+        .el-input{
+            width: 280px;
+            height: 42px;
+            .el-input__wrapper{
+                box-shadow: none;
+                border-radius: 8px;
+                border: 1.5px solid #B4BCFF !important;
+            }
+        }
+        .el-radio-group{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            .el-radio-button__inner{
+                width: 100px;
+                height: 41px;
+                margin-right: 1rem;
+                background: #FFFFFF;
+                border: 1px solid #5669FF;
+                border-radius: 8px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                p{
+                    color: #5669FF;
+                }
+            }
+            .is-active{
+                .el-radio-button__inner{
+                    background: #5669FF;
+                    p{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }

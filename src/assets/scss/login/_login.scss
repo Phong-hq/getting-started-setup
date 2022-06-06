@@ -1,0 +1,122 @@
+.login {
+    width: 100vw;
+    height: 100vh;
+    .login-background {
+        min-width: 430px;
+        width: 45%;
+        height: auto;
+    }
+    .login-background-vector {
+        width: 78%;
+        height: auto;
+    }
+    .login-form {
+        max-width: 760px;
+        width: 95%;
+        max-height: 1000px;
+        height: 90%;
+        .icon {
+            width: 24px;
+            height: 24px;
+        }.is-error{
+            // .el-input__wrapper {
+            //     border-color: #F65747 !important;
+            // }
+        }
+        .el-input {
+            border-radius: 12px;
+            border-radius: 12px;
+            width: 100%;
+            .el-input__wrapper {
+                border: solid 1px #5669FF;
+                border-radius: 12px;
+                box-shadow: none;
+                background: transparent;
+                // &.is-focus{
+                //     border-color: #409eff;
+                // }
+                input {
+                    width: 100%;
+                    height: 58px;
+                    font-size: 18px;
+                    padding: 0 2.5rem;
+                }
+    
+                .el-icon {
+                    width: 60px;
+                    height: 100%;
+                    font-size: 24px;
+                    svg {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+        .line-error{
+            height: 28px;
+            .text-error {
+                color: #F65747;
+                font-size: 20px;
+                font-style: italic;
+                margin-top: 0.4rem;
+            }
+        }
+        .el-form-item__error{
+            display: none !important;
+        }
+        .el-form-item{
+            margin-bottom: 0;
+        }
+        button {
+            width: 280px;
+            height: 64px;
+            border-radius: 12px;
+            font-size: 22px;
+            border-width: 1.5px;
+            background-color: #fff;
+            &.is-disabled{
+                background-color: #EEF1F5 !important;
+                color: #d1d1d1 !important;
+            }
+            &:hover, &:focus, &.submit-btn{
+                background-color: #5669FF;
+                color: #fff;
+
+            }
+        }
+
+        @media (min-height: 950px) {
+            justify-content: space-around !important;
+        }
+    }
+    @media (max-height: 800px) {
+        .form{
+            margin-top: 1rem !important;
+        }
+        .text-36px{
+            font-size: 28px;
+        }
+        .text-24px{
+            font-size: 18px;
+        }
+    }
+    @media (max-height: 600px) {
+        .el-form-item{
+            margin-top: 1rem;
+        }
+        input {
+            height: 48px !important;
+        }
+        .back-btn{
+            top: 0;
+            left: 1rem;
+        }
+        .line-error{
+            height: 20px !important;
+            .text-error {
+                top: 5rem !important;
+                font-size: 18px !important;
+            }
+        }
+    }
+}
